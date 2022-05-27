@@ -1,0 +1,25 @@
+SQLmemo
+
+world
+name	      continent	  area	population	gdp
+Afghanistan	Asia	      652230	25500100	20343000000
+Albania   	Europe	    28748	   2831741	12960000000
+Algeria	   Africa	      2381741	37100000	188681000000
+Andorra	   Europe	       468	     78115	3712000000
+Angola	   Africa	      1246700	20609294	100990000000
+....
+
+テーブル名 world
+
+name:国名
+continent:大陸
+area:面積
+population:人口
+gdp:国内総生産
+
+WHERE 節の使用例としてフランス France の人口 population を表示するSQLが書いてある。 注）文字列（短いテキストデータ）はこの様に'シングルクオート'で囲む。
+ドイツ(Germany)の人口(population)を表示するように修正する。
+
+SELECT population FLOM world
+WHERE name = 'Germany'
+
