@@ -22,4 +22,3 @@ WHERE 節の使用例としてフランス France の人口 population を表示
 
 SELECT population FLOM world
 WHERE name = 'Germany'
-
